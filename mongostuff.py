@@ -1,6 +1,8 @@
 from pymodm import connect
 from pymodm import MongoModel, fields
+from flask import Flask, request, jsonify
 
+app = Flask(__name__)
 connect("mongodb://localhost:27017/BME590Lecture22")
 
 
