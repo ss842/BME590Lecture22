@@ -16,3 +16,15 @@ class User(MongoModel):
 u1 = User(name='Sonali', age='24', bmi='fit')
 
 u.save()
+
+
+@app.route("/api/new_patient", methods=['POST'])
+def new_patient():
+    p = request.json
+    patient_name = p['name']
+    patient_age = p['age']
+    patient_bmi = p['bmi']
+
+    u1 = User(name=patient_name[0], age=patient_age[0], bmi=patient_bmi[0])
+
+    u1.save()
