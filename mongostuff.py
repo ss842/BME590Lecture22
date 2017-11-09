@@ -30,3 +30,5 @@ def new_patient():
     u1 = User(name=patient_name[0], age=patient_age[0], bmi=patient_bmi[0])
 
     u1.save()
+
+    return 'Successful!' 
