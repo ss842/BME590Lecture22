@@ -13,9 +13,9 @@ class User(MongoModel):
     bmi = fields.FloatField()
 
 
-u1 = User(name='Sonali', age='24', bmi='fit')
+# u1 = User(name='Sonali', age='24', bmi='fit')
 
-u.save()
+# u.save()
 
 
 @app.route("/api/new_patient", methods=['POST'])
